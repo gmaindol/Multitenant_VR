@@ -1,0 +1,75 @@
+# part of the panhandler application with docs at
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+
+# unique snippet name
+name: Create VR and asign Interface
+# label used for menu selection
+label: Sample SkilletBuilder skillet with EDL, tag, and security policy
+description: Used by SkilletBuilder to demonstrate skillet creation and loading and cross-element variables
+
+# type of device configuration
+# common types are panorama, panos, and template
+
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection:
+    - skilletbuilder
+
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: vrouter_name
+    description: enter VR router name
+    default: default
+    type_hint: default
+  - name: interface_name
+    description: interface
+    default: ethernet1/1
+    type_hint: ethernet1/1
+  # - name: edl_description
+  #   description: name of the external list
+  #   default: this is an ip block list
+  #   type_hint: text
+  # - name: edl_url
+  #   description: external list url
+  #   default: http://someurl.com
+  #   type_hint: text
+  # - name: tag_name
+  #   description: tag name
+  #   default: tag name
+  #   type_hint: text
+  # - name: tag_description
+  #   description: tag description
+  #   default: tag description
+  #   type_hint: text
+  # - name: tag_color
+  #   description: tag color
+  #   default: red
+  #   type_hint: dropdown
+  #   dd_list:
+  #     - key: blue
+  #       value: color3
+  #     - key: green
+  #       value: color2
+  #     - key: orange
+  #       value: color6
+  #     - key: red
+  #       value: color1
+
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: vrouter
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
+    file: vrouter.xml
+  # - name: tag
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
+  #   file: tag.xml
+  # - name: security_rules
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security/rules
+  #   file: security_rules.xml
