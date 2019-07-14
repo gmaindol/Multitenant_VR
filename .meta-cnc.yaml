@@ -23,14 +23,15 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: vrouter_name
-    description: enter VR router name
-    default: default
-    type_hint: default
   - name: interface_name
     description: interface
     default: ethernet1/1
     type_hint: ethernet1/1
+  - name: vrouter_name
+    description: enter VR router name
+    default: default
+    type_hint: default
+
   # - name: edl_description
   #   description: name of the external list
   #   default: this is an ip block list
