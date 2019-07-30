@@ -54,7 +54,7 @@
                 </bfd>
                 <interface>{{ tenant_1_interface }}</interface>
                 <metric>10</metric>
-                <destination>{{ tenanat_1_next_hop }}</destination>
+                <destination>{{ tenant_1_next_hop }}</destination>
                 <route-table>
                   <unicast/>
                 </route-table>
