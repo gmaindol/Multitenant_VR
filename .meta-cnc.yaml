@@ -33,7 +33,7 @@ variables:
     type_hint: ethernet interface
   - name: tenant_1_default_route
     description: name of default route towards common VR
-    default: tenant_1_route_to_common_VR
+    default: tenant_1_to_common_VR
     type_hint: default route name
   - name: tenanat_1_next_hop
     description: default_route_for_tenant_1
