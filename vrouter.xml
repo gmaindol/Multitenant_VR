@@ -148,7 +148,7 @@
         <routing-table>
           <ip>
             <static-route>
-              <entry name=" {{ tenanat_1_return_route }}">
+              <entry name=" {{ tenant_1_return_route }}">
                 <nexthop>
                   <next-vr>{{ tenant_1_VR }}</next-vr>
                 </nexthop>
@@ -167,7 +167,7 @@
                   <unicast/>
                 </route-table>
               </entry>
-              <entry name="{{ tenanat_2_return_route }}">
+              <entry name="{{ tenant_2_return_route }}">
                 <nexthop>
                   <next-vr>{{ tenant_2_VR }}</next-vr>
                 </nexthop>

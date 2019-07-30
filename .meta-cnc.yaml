@@ -63,18 +63,21 @@ variables:
     description: interface for common VR
     default: ethernet1/3
     type_hint: ethernet1/3
-  - name: tenanat_1_return_route
+  - name: tenant_1_return_route
     description: first tenant return route name
-    default: return_route_tenanat_1
-    type_hint: tenanat_1_return_route name
+    default: return_route_tenant_1
+    type_hint: tenant_1_return_route name
   - name: tenant_1_subnet 
     description: first tenant subnet
     default: 1.1.1.0/24
     type_hint: tenanat_1_subnet configured on its interface
+  - name: tenant_2_return_route
+    description: second tenant return route name
+    default: return_route_tenant_2
   - name: tenant_2_subnet
     description: second tenant subnet
     default: 2.2.2.0/24
-    type_hint: tenanat_2_return_route name
+    type_hint: second tenant subnet
   - name: common_vr_next_hop_route
     description: common vr next hop
     default: common vr next hop name
