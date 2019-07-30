@@ -24,35 +24,35 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 variables:
   - name: tenant_1_VR
-    description: tenant_1_VR
-    default: tenant_VR
+    description: first tenant VR Name
+    default: tenant_1_VR
     type_hint: default
   - name: tenant_1_interface
-    description: tenant interface that is part of tenanat_1_VR
+    description: interface for first tenant VR
     default: ethernet1/1
     type_hint: ethernet interface
   - name: tenant_1_default_route
-    description: name of default route towards common VR
+    description: default route name for first tenant
     default: tenant_1_to_common_VR
     type_hint: default route name
   - name: tenanat_1_next_hop
-    description: default_route_for_tenant_1
+    description: default route for first tenant
     default: 0.0.0.0/0
     type_hint: default route
   - name: tenant_2_VR
-    description: tenant_2_VR name
-    default: tenant_VR
+    description: second tenant VR Name
+    default: tenant_2_VR
     type_hint: default
   - name: tenant_2_interface
-    description: tenant interface that is part of tenanat_2_VR
+    description: interface for first tenant VR
     default: ethernet1/2
     type_hint: ethernet interface
   - name: tenant_2_default_route
-    description: tenant_2_route_to_common_VR
-    default: default_route_to_common_VR
+    description: default route name for second tenant
+    default: tenant_1_to_common_VR
     type_hint: default route name
   - name: tenanat_2_next_hop
-    description: default_route_for_tenant_2
+    description: default route for second tenant
     default: 0.0.0.0/0
     type_hint: default route
   - name: commom_vr
@@ -60,28 +60,28 @@ variables:
     default: common_VR
     type_hint: common_vr
   - name: common_vr_interface
-    description: interface part of tenanat VR
+    description: interface for common VR
     default: ethernet1/3
     type_hint: ethernet1/3
   - name: tenanat_1_return_route
-    description: tenanat_1_return_route name
+    description: first tenant return route name
     default: return_route_tenanat_1
     type_hint: tenanat_1_return_route name
   - name: tenant_1_subnet 
-    description: tenanat_1_subnet configured on its interface
-    default: 1.1.1.1/24
+    description: first tenant subnet
+    default: 1.1.1.0/24
     type_hint: tenanat_1_subnet configured on its interface
   - name: tenant_2_subnet
-    description: return_route_tenanat_2
-    default: 2.2.2.2/24
-    type_hint: tenanat_1_return_route name
+    description: second tenant subnet
+    default: 2.2.2.0/24
+    type_hint: tenanat_2_return_route name
   - name: common_vr_next_hop_route
-    description: common_vr_next_hop_route name
-    default: common_vr_default_route
+    description: common vr next hop
+    default: common vr next hop name
     type_hint: common_vr_next_hop_route name
   - name: common_vr_next_hop_ip
     description: IP address of the next hop router
-    default: 3.3.3.3/24
+    default: 3.3.3.3
     type_hint: common_vr_next_hop_route name
   - name: outside_destination_subnet
     description: default or outside subnet
