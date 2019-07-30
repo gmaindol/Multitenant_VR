@@ -130,7 +130,6 @@
                 <bfd>
                   <profile>None</profile>
                 </bfd>
-                <interface>{{ tenant_1_interface }}</interface>
                 <metric>10</metric>
                 <destination>{{ tenant_1_default_route }}</destination>
                 <route-table>
@@ -184,7 +183,6 @@
                 <bfd>
                   <profile>None</profile>
                 </bfd>
-                <interface>{{ tenant_2_interface }}</interface>
                 <metric>10</metric>
                 <destination>{{ tenanat_2_next_hop }}</destination>
                 <route-table>
