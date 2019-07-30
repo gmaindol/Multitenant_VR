@@ -1,4 +1,4 @@
- <entry name="{{ commom_vr }}">
+ <entry name="{{ common_vr }}">
         <ecmp>
           <algorithm>
             <ip-modulo/>
@@ -125,7 +125,7 @@
                   <hold-time>2</hold-time>
                 </path-monitor>
                 <nexthop>
-                  <next-vr>{{ commom_vr }}</next-vr>
+                  <next-vr>{{ common_vr }}</next-vr>
                 </nexthop>
                 <bfd>
                   <profile>None</profile>
@@ -178,7 +178,7 @@
                   <hold-time>2</hold-time>
                 </path-monitor>
                 <nexthop>
-                  <next-vr>{{ commom_vr }}</next-vr>
+                  <next-vr>{{ common_vr }}</next-vr>
                 </nexthop>
                 <bfd>
                   <profile>None</profile>

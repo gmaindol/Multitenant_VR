@@ -2,10 +2,10 @@
 # https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
 
 # unique snippet name
-name: Create VR and asign Interface
+name: Creating Multitenant VR
 # label used for menu selection
-label: Sample SkilletBuilder skillet with EDL, tag, and security policy
-description: Used by SkilletBuilder to demonstrate skillet creation and loading and cross-element variables
+label: Multitenancy VR
+description: Creating Tenant VR and Common Internet VR
 
 # type of device configuration
 # common types are panorama, panos, and template
@@ -55,7 +55,7 @@ variables:
     description: default route for second tenant
     default: 0.0.0.0/0
     type_hint: default route
-  - name: commom_vr
+  - name: common_vr
     description: Common VR router name
     default: common_VR
     type_hint: common_vr
