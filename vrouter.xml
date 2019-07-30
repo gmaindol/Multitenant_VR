@@ -131,7 +131,7 @@
                   <profile>None</profile>
                 </bfd>
                 <metric>10</metric>
-                <destination>{{ tenant_1_default_route }}</destination>
+                <destination>{{ tenant_1_next_hop }}</destination>
                 <route-table>
                   <unicast/>
                 </route-table>

@@ -49,7 +49,7 @@ variables:
     type_hint: ethernet interface
   - name: tenant_2_default_route
     description: route name for second tenant
-    default: tenant_1_to_common_VR
+    default: tenant_2_to_common_VR
     type_hint: default route name
   - name: tenanat_2_next_hop
     description: default route for second tenant
