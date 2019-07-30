@@ -198,7 +198,6 @@
                 <bfd>
                   <profile>None</profile>
                 </bfd>
-                <interface>{{ common_vr_interface }}</interface>
                 <metric>10</metric>
                 <destination>{{ outside_destination_subnet}}</destination>
                 <route-table>
