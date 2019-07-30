@@ -56,7 +56,7 @@ variables:
     default: 0.0.0.0/0
     type_hint: default route
   - name: commom_vr
-    description: enter Common VR router name
+    description: Common VR router name
     default: common_VR
     type_hint: common_vr
   - name: common_vr_interface
@@ -84,7 +84,7 @@ variables:
     type_hint: common_vr_next_hop_route name
   - name: common_vr_next_hop_ip
     description: IP address of the next hop router
-    default: 3.3.3.3
+    default: 10.10.10.20
     type_hint: common_vr_next_hop_route name
   - name: outside_destination_subnet
     description: default or outside subnet
